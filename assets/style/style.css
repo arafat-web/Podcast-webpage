@@ -1,14 +1,13 @@
+/* Root Element */
+
 :root {
   --bg-color: #4a4325;
-  --bg-color2: ;
-  --header-font: ;
-  --text-font: ;
-  --font-color: ;
-  --font-color2: ;
+  --text-font: "Roboto", sans-serif;
+  --font-color: #ffffff;
 }
 * {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 body {
   max-width: 1920px;
@@ -41,7 +40,7 @@ a:hover {
   font-weight: 900;
   font-size: 30px;
   line-height: 35px;
-  color: #ffffff;
+  color: var(--font-color);
 }
 
 .info-text {
@@ -56,7 +55,7 @@ a:hover {
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.05em;
-  color: #ffffff !important;
+  color: var(--font-color) !important;
   text-align: start;
 }
 
@@ -67,7 +66,7 @@ a:hover {
   font-size: 48px;
   line-height: 70px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--font-color);
   padding-top: 80px;
 }
 .booking-link {
@@ -75,101 +74,101 @@ a:hover {
 }
 .contact {
   padding-top: 200px;
-  border-bottom: 1px solid rgba(247, 244, 244, 0.541);
+  border-bottom: 1px solid rgba(247, 244, 244, 0.35);
 }
 .link {
-    text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 47px;
-    color: #ffffff;
-    display: inline-block;
-    padding-right: 25px;
-  }
-  .link:hover {
-    text-decoration: none;
-    color: #ffffff;
-    opacity: 0.8;
-  }
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 47px;
+  color: var(--font-color);
+  display: inline-block;
+  padding-right: 25px;
+}
+.link:hover {
+  text-decoration: none;
+  color: var(--font-color);
+  opacity: 0.8;
+}
 
-  .contact .title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .contact .email-link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .img-section {
-    background: url(../img/bg-photo.png);
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-  }
-  .slider {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  
-  /* Next & previous buttons */
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 70%;
-    left: 40%;
-    width: 100%;
-    padding: 16px;
-    margin-top: -22px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    /* right: 100; */
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .numbertext {
-    position: absolute;
-    /* width: 100%; */
-    bottom: 0;
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    margin-left: -150px;
-    margin-bottom: 20px;
-    color: #ffffff;
-    padding: 10px;
-    background-color: #b36b2b;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-  }
+.contact .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--font-color);
+}
+.contact .email-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--font-color);
+}
+.img-section {
+  background: url(../img/bg-photo.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.slider {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  width: 100%;
+  padding: 16px;
+  margin-top: -22px;
+  text-align: center;
+  color: var(--font-color);
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  /* right: 100; */
+  border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+  position: absolute;
+  /* width: 100%; */
+  bottom: 0;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  margin-left: -150px;
+  margin-bottom: 20px;
+  color: var(--font-color);
+  padding: 10px;
+  background-color: #b36b2b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
 @media (max-width: 1800px) {
   .contact {
@@ -206,7 +205,6 @@ a:hover {
   .header {
     font-size: 30px;
     line-height: 20px;
-    color: #ffffff;
   }
 
   .info-text {
@@ -227,7 +225,6 @@ a:hover {
   .header {
     font-size: 25px;
     line-height: 20px;
-    color: #ffffff;
   }
 
   .info-text {
@@ -251,7 +248,6 @@ a:hover {
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
-    color: #ffffff;
   }
   .slide-img {
     float: right;
@@ -271,9 +267,9 @@ a:hover {
 }
 
 @media (max-width: 1350px) {
-    .bg-color {
-        height: 100%;
-    }
+  .bg-color {
+    height: 100%;
+  }
   .contact {
     padding-top: 20px;
   }
@@ -285,7 +281,6 @@ a:hover {
   .header {
     font-size: 25px;
     line-height: 20px;
-    color: #ffffff;
   }
 
   .info-text {
@@ -309,7 +304,6 @@ a:hover {
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
-    color: #ffffff;
   }
   .slide-img {
     float: right;
@@ -318,18 +312,18 @@ a:hover {
 }
 
 @media (max-width: 1300px) {
-    .bg-color {
-        height: 100%;
-    }
-    .img-section{
-        background: url(../img/bg-photo.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-    }
+  .bg-color {
+    height: 100%;
+  }
+  .img-section {
+    background: url(../img/bg-photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
   .contact {
     padding-top: 20px;
   }
@@ -341,7 +335,6 @@ a:hover {
   .header {
     font-size: 20px;
     line-height: 10px;
-    color: #ffffff;
   }
 
   .info-text {
@@ -365,7 +358,6 @@ a:hover {
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
-    color: #ffffff;
   }
   .slide-img {
     float: right;
@@ -375,12 +367,12 @@ a:hover {
 
 @media (max-width: 750px) {
   .bg-color {
-      height: 100%;
+    height: 100%;
     padding: 20px;
     padding-top: 40px;
     text-align: center;
   }
-  .img-section{
+  .img-section {
     background: url(../img/bg-photo.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -388,57 +380,50 @@ a:hover {
     position: relative;
     background-repeat: no-repeat;
     background-origin: content-box;
-}
+  }
   .info-text p {
     font-size: 12px;
     text-align: center;
   }
-  .link{
-      font-size: 17px;
+  .link {
+    font-size: 17px;
   }
   .big-header {
     font-size: 17px;
     padding-top: 0px;
   }
 
-  .booking-link{
-      padding-top: 0px;
+  .booking-link {
+    padding-top: 0px;
   }
-  .contact{
-      padding-top: 0px;
+  .contact {
+    padding-top: 0px;
   }
-  .btn-img{
-      width: 20%;
-      height: 25px;
+  .btn-img {
+    width: 20%;
+    height: 25px;
   }
-
 }
 
 @media (max-width: 550px) {
-    .bg-color {
-      padding: 20px;
-      padding-top: 40px;
-      text-align: center;
-    }
-    .info-text p {
-      font-size: 12px;
-      text-align: center;
-    }
-    .link{
-        font-size: 15px;
-    }
-    .big-header {
-      font-size: 15px;
-      padding-top: 5px;
-    }
-  
-    .booking-link{
-        padding-top: 5px;
-    }
-  
+  .bg-color {
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .info-text p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .link {
+    font-size: 15px;
+  }
+  .big-header {
+    font-size: 15px;
+    padding-top: 5px;
   }
 
-
-
-
-
+  .booking-link {
+    padding-top: 5px;
+  }
+}
