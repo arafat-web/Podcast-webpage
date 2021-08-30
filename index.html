@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-7 col-lg-12">
+                <div class="bg-color">
+                    <div class="header">
+                        Dr. Shari D. Scott
+                    </div>
+                    <div class="info-text">
+                        <p>
+
+                            Dr. Shari D. Scott is an ordained minister, a published author, and the founder of
+                            Developing
+                            Healthy Desires and Behaviors Ministry (DHDB); a ministry devoted to seeing the
+                            broken-hearted
+                            healed. With the help of the Holy Ghost, Dr. Scott teaches people how to apply biblical
+                            truth to
+                            every aspect of their lives.
+                        </p>
+
+                        <p>
+                            Fueled by her love for Christ and passion for souls, Dr. Scott desire to expose the lies,
+                            tricks
+                            and deception of the enemy; in particular to men and women who are currently suffering from
+                            the
+                            aftermath of spiritual, emotional, verbal and sexual abuse. She has two earned Doctorate
+                            degrees
+                            (one in Biblical Counseling and the other in Psychology). Dr. Scott operates under the
+                            premise
+                            that the solutions to all of the problems we face in life are rooted in discovering the love
+                            of
+                            Christ, receiving his forgiveness and obeying His Word.
+                        </p>
+
+                        <p>
+                            In her books, Dr. Scott candidly shares her life experiences in hopes that others who have
+                            encountered sexual abuse, molestation, rejection, mistreatment, shame, verbal abuse,
+                            loneliness
+                            and pain will gain hope, insight and ultimately freedom from their malevolent affects. Dr.
+                            Scott
+                            ultimate aim is to promote the love of God, to display the character of Jesus Christ, and to
+                            enhance personal relationships with God through Bible Studies, prayer meetings, and
+                            Christian
+                            fellowships.
+
+                        </p>
+
+                    </div>
+                    <div class="big-header">
+                        Book Available Now
+                    </div>
+
+                    <div class="booking-link">
+                        <a class="link" href="mailto:example@mail.com">@</a>
+                        <a href="http://link.com">
+                            <img class="btn-img" src="assets/img/button.PNG" alt="" srcset="">
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-6 col-12">
+                            <div class="contact">
+                                <span class="logo"></span>
+                                <span class="title">Contact:</span>
+                                <a href="mailto:drshariscott@gmail.com" class="email-link">drshariscott@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 ">
+                <div class="img-section">
+
+                    <div class="slider">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 2</div>
+                            <img class="slide-img" src="assets/img/girl-photo.png">
+                           
+                          </div>
+                          
+                          <div class="mySlides">
+                            <div class="numbertext">2 / 2</div>
+                            <img class="slide-img" src="assets/img/girl-photo.g">
+                           
+                          </div>
+
+                          
+                          <a class="next" onclick="plusSlides(1)">&#8594;</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+</body>
+
+</html>
